@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="on">
+    <head>
+        <meta chatset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title> Calculadora </title>
+        <link rel="stylesheet" href="style.css">
+        </meta>
+    </head>
+    <body>
+
+        <div id="calculator">              <!-- Referente a toda a pag web -->
+            <input id="display" readonly>  <!-- o display é onde os números são exibidos. "readonly" é para não ser possivel digitar no display -->
+            <div id="keys">                <!-- uma div que armazena todos os botões da calculadora -->
+                <button onclick="appendToDisplay('+')" class="btn_operador"> + </button> <!-- btn_operador é para esses botões serem laranja -->
+                <button onclick="appendToDisplay('7')"> 7 </button>                      <!-- appendToDisplay('7') adiciona 7 ao display. O outro valor é o escrito do botão -->
+                <button onclick="appendToDisplay('8')"> 8 </button>
+                <button onclick="appendToDisplay('9')"> 9 </button>
+                <button onclick="appendToDisplay('-')" class="btn_operador"> - </button>
+                <button onclick="appendToDisplay('4')"> 4 </button>
+                <button onclick="appendToDisplay('5')"> 5 </button>
+                <button onclick="appendToDisplay('6')"> 6 </button>
+                <button onclick="appendToDisplay('*')" class="btn_operador"> * </button>
+                <button onclick="appendToDisplay('1')"> 1 </button>
+                <button onclick="appendToDisplay('2')"> 2 </button>
+                <button onclick="appendToDisplay('3')"> 3 </button>
+                <button onclick="appendToDisplay('/')" class="btn_operador"> / </button>
+                <button onclick="appendToDisplay('0')"> 0 </button>
+                <button onclick="appendToDisplay('.')"> . </button>
+                <button onclick="calculate()"> = </button>                          <!-- chama a função do js que calcula os valores -->
+                <button onclick="clearDisplay()" class="btn_operador"> C </button>  <!-- chama a função do js que limpa o display -->
+                <!-- appendToDisplay, calculate e clearDisplay foram programadas no JS -->
+            </div>
+        </div> 
+
+        <script src="index.json"></script>
+    </body>
+</html>

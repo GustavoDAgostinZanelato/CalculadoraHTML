@@ -1,0 +1,19 @@
+const display = document.getElementById("display");
+
+function appendToDisplay(input){
+    display.value += input; /* insere o valor do botão no display */
+}
+
+function clearDisplay(){
+    display.value = ""; /* coloca no diplay uma string sem valor */
+}
+
+function calculate(){
+    try{                                       
+        display.value = eval(display.value);  /* eval é como uma caluladora do JS. Recebe o que for digitado no display e realiza o cálculo */
+    }
+    catch(error){                             /* mostra uma mensegem de erro caso uma operação seja inválida */
+        display.value = "Error";
+    }
+    
+}

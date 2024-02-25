@@ -1,0 +1,67 @@
+/* design da página da calculadora */
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* design do display */
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+/* design da área ocupada pela calculadora */
+#calculator{
+    font-family: arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+/* espaçamento e disposição dos botões */
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* coloca 4 botões por coluna */
+    gap: 10px;
+    padding: 25px; 
+}
+
+/* design dos botões */
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;  /* quando o mouse passa por cima do botão, o cursor vira um pointer */
+}
+
+button:hover{                                /* o atributo hover para quando o mouse passar por cima do botão, ele ficar mais claro */
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{                               /* o atributo active é para quando o botão for precionado, ele ficar levemente mais claro */
+    background-color: hsl(0, 0%, 50%);
+}
+.btn_operador{
+    background-color: hsl(39, 100%, 50%);
+}
+.btn_operador:hover{
+    background-color: hsl(39, 100%, 65%);
+}
+.btn_operador:active{
+    background-color: hsl(39, 100%, 75%);
+}
+
